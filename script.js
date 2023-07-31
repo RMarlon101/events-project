@@ -1,17 +1,31 @@
-let divRef = document.querySelector("#aqua");
+let divRef = document.querySelector("#color-display");
 
-let buttonRef = document.getElementById("aqua");
-
-buttonRef.onclick = function() {
-    buttonRef.style.backgroundColor = "aqua";
-
-    if (divRef.style.backgroundColor == "aqua") {
-        divRef.style.backgroundColor = "aqua";
-    }
+document.getElementById("aqua").onclick = function() {
+    divRef.style.backgroundColor = "aqua";
+    divRef.innerHTML = "aqua";
 
 }
 
-//toggling display//
+document.getElementById("teal").onclick = function()  {
+    divRef.style.backgroundColor = "teal";
+    divRef.innerHTML = "teal";
+}
+
+document.getElementById("pink").onclick = function()  {
+    divRef.style.backgroundColor = "pink";
+    divRef.innerHTML = "pink";
+}
+
+document.getElementById("purple").onclick = function()  {
+    divRef.style.backgroundColor = "purple";
+    divRef.innerHTML = "purple";
+}
+
+document.getElementById("colorless").onclick = function()  {
+    divRef.style.backgroundColor = "white";
+    divRef.innerHTML = "white";
+}
+
 let displayButton = document.getElementById("display-btn");
 
 displayButton.onclick = function(){
